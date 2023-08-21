@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectCoding</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to ProjectCoding</h1>
+    </header>
+    <main>
+        <section>
+            <h2>About</h2>
+            <p>This is a coding project with user authentication, data visualization, and payment gateway functionalities.</p>
+        </section>
+        <section>
+            <h2>Login</h2>
+            <a href="{% url 'login' %}">Login</a>
+        </section>
+        <section>
+            <h2>Register</h2>
+            <a href="{% url 'register' %}">Register</a>
+        </section>
+    </main>
+    <footer>
+        <p>© 2022 ProjectCoding. All rights reserved.</p>
+    </footer>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
